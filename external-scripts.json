@@ -7,6 +7,5 @@
   "hubot-maps",
   "hubot-redis-brain",
   "hubot-rules",
-  "hubot-shipit",
-  "backlog2slack"
+  "hubot-shipit"
 ]
