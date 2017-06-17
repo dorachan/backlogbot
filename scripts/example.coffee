@@ -13,7 +13,7 @@ module.exports = (robot) ->
   robot.hear /unixtime (\d*)/i, (res) ->
     ut = parseInt(res.match[1]);
     dt = new Date(ut).toString()
-    res.reply "Time is #{dt}"
+    res.send "Time is #{dt}"
 
   robot.hear /badger/i, (res) ->
     res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
