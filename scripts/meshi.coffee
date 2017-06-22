@@ -10,10 +10,13 @@ module.exports = (robot)->
         res.send "miss #{err}"
         return
       json = JSON.parse(body)
+      if json.hasOwnProperty('error')
+        res.send "土耕すところから始めるしかない\n http://be-attractive.jp/wp-content/uploads/2015/11/167a9a8fa8db4f8c07d744a47a8a9cc9-600x386.jpg"
+        return
       rest = json.rest
       len = rest.length
       if rest.length < 1
-        res.send "土耕すところから始めるしかない"
+        res.send "土耕すところから始めるしかない\n http://be-attractive.jp/wp-content/uploads/2015/11/167a9a8fa8db4f8c07d744a47a8a9cc9-600x386.jpg"
       else
         # ランダムにする
         index = Math.random() * len | 0
