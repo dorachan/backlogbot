@@ -1,7 +1,7 @@
 
 module.exports = (robot)->
   #meshi search
-  robot.here /(.*) tabetai/i, (res)->
+  robot.hear /(.*) tabetai/i, (res)->
     url = 'https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=55e05834a6421bfdcc3e28aeb6b80776&format=json&latitude=35.6656161&longitude=139.69586429999998&range=3&freeword='
     word = encodeURIComponent(res.match[1])
     url += word
