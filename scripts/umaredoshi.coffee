@@ -1,5 +1,5 @@
 module.exports = (robot) ->
-  robot.hear /^([1-9]\d{0,2}|0)ちゃい/, (msg) ->
+  robot.hear /([1-9]\d{0,2}|0)ちゃい/, (msg) ->
     now = new Date()
     year = now.getFullYear()
     birth = parseInt(msg.match[1].replace(/ちゃい/g, ""));
