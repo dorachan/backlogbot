@@ -1,3 +1,6 @@
+# Commands:
+#   hubot <age>ちゃい
+
 module.exports = (robot) ->
   robot.hear /\b([1-9]\d*|0)ちゃい/, (msg) ->
     now = new Date()

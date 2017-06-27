@@ -2,7 +2,7 @@
 #   unixtime(milliseconds) to JST
 #
 # Commands:
-#   hubot unixtime <milliseconds>
+#   hubot unixtime <milliseconds> - Unix Time Conversion to JST
 
 moment = require ('moment-timezone')
 

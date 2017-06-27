@@ -1,3 +1,5 @@
+# Commands:
+#   hubot <food> tabetai
 
 module.exports = (robot)->
   #meshi search
