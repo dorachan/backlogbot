@@ -2,7 +2,7 @@
 #   unixtime(milliseconds) to JST
 #
 # Commands:
-#   hubot unixtime 1234567
+#   hubot unixtime <milliseconds>
 
 moment = require ('moment-timezone')
 
@@ -13,4 +13,3 @@ module.exports = (robot) ->
     ut = parseInt(res.match[1])
     dt = moment(ut).tz('Asia/Tokyo').format()
     res.send "Time is #{dt}"
-    
